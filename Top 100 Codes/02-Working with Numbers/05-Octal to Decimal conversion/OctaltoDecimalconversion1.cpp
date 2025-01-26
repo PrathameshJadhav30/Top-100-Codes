@@ -1,3 +1,4 @@
+// Algorithmic way
 #include <iostream>
 #include <cmath> // For pow() function
 using namespace std;
