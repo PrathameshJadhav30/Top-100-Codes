@@ -36,14 +36,7 @@ int main()
     cout << "Enter a decimal number: ";
     cin >> decimal_num;
 
-    // Validate the input
-    if (decimal_num < 0)
-    {
-        cout << "Please enter a non-negative decimal number." << endl;
-        return 1; // Exit the program with an error code
-    }
-
-    // Function call to convert the decimal number to hexadecimal
+     // Function call to convert the decimal number to hexadecimal
     string hexadecimal = convertToHexadecimal(decimal_num);
 
     // Display the result
