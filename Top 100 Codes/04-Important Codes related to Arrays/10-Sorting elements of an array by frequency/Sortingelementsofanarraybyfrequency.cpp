@@ -15,7 +15,7 @@ void sortByFrequency(int arr[], int n) {
             }
         }
         if (freq[i] != visited) {
-            freq[i] = count;
+            freq[i] = count; 
         }
     }
 
