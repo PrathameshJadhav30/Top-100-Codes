@@ -11,7 +11,7 @@ int main() {
         freq[arr[i]]++;
     }
 
-    // Print elements that appear more than once using a normal for loop
+    // Print elements that appear  once using a normal for loop
     for (auto it = freq.begin(); it != freq.end(); it++) {
         if (it->second == 1) {
             cout << it->first << " ";
