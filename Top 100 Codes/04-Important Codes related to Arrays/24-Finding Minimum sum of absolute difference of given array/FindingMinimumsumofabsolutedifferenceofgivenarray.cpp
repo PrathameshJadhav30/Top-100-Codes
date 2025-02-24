@@ -5,31 +5,17 @@
 using namespace std;
 
 int sumOfMinAbsDiff(int arr[], int n) {
-    if (n < 2) return 0; // If there's only one element, no difference exists.
+    if (n < 2) 
+        return 0; // If there's only one element, no difference exists.
 
     sort(arr, arr + n); // Sorting the array to bring closer elements together
     int sum = 0;
 
     for (int i = 0; i < n; i++) {
-        int leftDiff, rightDiff;
-
-        if (i > 0) {
-            leftDiff = abs(arr[i] - arr[i - 1]);
-        } else {
-            leftDiff = INT_MAX;
-        }
-
-        if (i < n - 1) {
-            rightDiff = abs(arr[i] - arr[i + 1]);
-        } else {
-            rightDiff = INT_MAX;
-        }
-
-        if (leftDiff < rightDiff) {
-            sum += leftDiff;
-        } else {
-            sum += rightDiff;
-        }
+        int leftDiff = (i > 0) ? abs(arr[i] - arr[i - 1]) : INT_MAX;
+        int rightDiff = (i < n - 1) ? abs(arr[i] - arr[i + 1]) : INT_MAX;
+        
+        sum += min(leftDiff, rightDiff);
     }
 
     return sum;
