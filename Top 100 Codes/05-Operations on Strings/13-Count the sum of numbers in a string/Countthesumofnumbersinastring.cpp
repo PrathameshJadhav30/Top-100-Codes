@@ -15,7 +15,7 @@ int sumOfNumbersInString(string str) {
         }
     }
     
-    sum += num; // Add last number (if any)
+    sum += num; // Add last number 
     return sum;
 }
 
