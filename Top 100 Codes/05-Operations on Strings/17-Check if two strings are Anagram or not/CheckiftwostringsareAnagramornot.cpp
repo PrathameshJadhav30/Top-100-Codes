@@ -25,6 +25,6 @@ int main(){
     if(areAnagrams(str1,str2)){
         cout<<"Two Strings Are Anagrams.";
     }else{
-        cout<<" Two Strings Are Not Anagarams.";
+        cout<<" Two Strings Are Not Anagarams."; 
     }
 }
